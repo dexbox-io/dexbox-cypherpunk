@@ -1,0 +1,12 @@
+#!/bin/bash
+
+### Runs DCR Daemons.
+
+SERVICE="dcrd"
+
+sudo killall $SERVICE
+sudo killall dcrwallet
+sudo killall bitcoin-qt
+sudo killall bitcoind
+sudo killall dexc
+tmux kill-server
