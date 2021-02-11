@@ -9,14 +9,3 @@
 # - 
 #
 
-source updater-vars.sh
-
-FILE=updater.sh
-
-if 	test -f "$FILE"
-
-then
-	echo "$FILE exists"
-else
-	echo "$FILE does not exist"
-fi
