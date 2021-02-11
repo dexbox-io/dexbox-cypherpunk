@@ -1,0 +1,15 @@
+#!/bin/bash
+
+### Safely Terminates All Daemons.
+
+
+
+sudo pkill --signal=TERM dcrd
+sudo pkill --signal=TERM dcrwallet
+sudo pkill --signal=TERM bitcoin-qt
+sudo pkill --signal=TERM bitcoind
+sudo pkill --signal=TERM dexc
+sudo pkill --signal=TERM monerod
+sudo pkill --signal=TERM litecoind
+
+tmux kill-server
