@@ -1,0 +1,32 @@
+#!/bin/bash
+
+#Check if the latest cryptocurrency applications are installed.
+
+source /$HOME/dexbox/dexbox-cypherpunk/variables/setvariables.source
+
+
+#Check if dcrd exists
+ if      test -f "$DCRDIR/dcrd"
+
+then
+        echo -e "${DARKGRAY} dcrd in $DCRDIR exists. Setting DCRDINSTALLED=true"
+	DCRDINSTALLED="true"
+else
+        echo "dcrd in $DCRDIR does not exist. Setting DCRDINSTALLED=false"
+	DCRDINSTALLED="false"
+fi
+#export DCRDINSTALLED
+
+
+#Check if bitcoind exists
+ if      test -f "$BTCDIR/bitcoind"
+
+then
+        echo "bitcoind in $BTCDIR exists"
+        BITCOINDINSTALLED="true"
+else
+        echo -e "bitcoind in $BTCDIR does not exist ${NC}"
+        BITCOINDINSTALLED="false"
+fi
+
+

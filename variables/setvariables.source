@@ -1,0 +1,85 @@
+#!/bin/bash
+
+
+### This Script Sets All DexBox Variables
+
+DARKGRAY="\033[1;30m"
+BLUE='\033[0;34m'
+LIGHTBLUE="\033[1;34m"
+YELLOW="\033[1;33m"
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m'
+
+DEXBOXDIR=$HOME/dexbox/
+export DEXBOXDIR
+
+CYPHERPUNKDIR=$HOME/dexbox/dexbox-cypherpunk/
+export CYPHERPUNKDIR
+
+######
+###### DexBox Supported Application Directories
+######
+
+DCRDIR=$HOME/decred/decred-linux-arm64-v1.6.0/
+export DCRDIR
+
+DCRDEXDIR=$HOME/dcrdex/dexc-linux-arm64-v0.1.4/
+export DCRDEXDIR
+
+BTCDIR=$HOME/bitcoin/bitcoin-0.21.0/bin/
+export BTCDIR
+
+LTCDIR=$HOME/litecoin/litecoin-0.18.1/bin/
+export LTCDIR
+
+DOGECOINDIR=$HOME/dogecoin/dogecoin-1.14.2/bin/
+export DOGECOINDIR
+
+######
+###### Blockchain Data Directories
+######
+
+BTCDATADIR=$HOME/Blockchains/Bitcoin
+export BTCDATADIR
+
+LTCDATADIR=$HOME/Blockchains/Litecoin
+export LTCDATADIR
+
+DCRDDIR=$HOME/Blockchains/Decred/data
+export DCRDDIR
+
+######
+###### Blockchain Wallet Directories
+######
+
+BTCWALLETDIR=$HOME/.bitcoin/wallets
+export BTCWALLETDIR
+
+LTCWALLETDIR=$HOME/.litecoin
+export LTCWALLETDIR
+
+######
+###### Blockchain Config Path
+######
+
+DCRDCONFPATH=$HOME/.dcrd/dcrd.conf
+export DCRDCONFPATH
+
+DCRCTLCONFPATH=$HOME/.dcrctl/dcrctl.conf
+export DCRCTLCONFPATH
+
+DCRWALLETCONFPATH=$HOME/.dcrwallet/dcrwallet.conf
+export DCRWALLETCONFPATH
+
+DEXCCONFPATH=$HOME/.dexc/dexc.conf
+export DEXCCONFPATH
+
+BTCCONFPATH=$HOME/.bitcoin/bitcoin.conf
+export BTCCONFPATH
+
+LTCCONFPATH=$HOME/.litecoin/litecoin.conf
+export LTCCONFPATH
+
+DOGECONFPATH=$HOME/.dogecoin/dogecoin.conf
+export DOGECONFPATH

@@ -1,0 +1,26 @@
+#!/bin/bash
+source /$HOME/dexbox/dexbox-cypherpunk/variables/setvariables.source
+
+# Setting variables of links to crypto binaries from official releases.
+echo -e "${DARKGRAY} importing Crypto VERSION variables..."
+
+DCRCLIVERSION="decred-linux-arm64-v1.6.0"
+export DCRCLIVERSION
+#echo "DCRCLI VERSION set: $DCRCLIVERSION"
+
+DCRDEXVERSION="dexc-linux-arm64-v0.1.4"
+export DCRDEXVERSION
+#echo "DCRDEX VERSION set: $DCRDEXVERSION"
+
+BTCVERSION="bitcoin-0.21.0-arm-linux-gnueabihf"
+export BTCVERSION
+#echo "BTC VERSION set: $BTCVERSION"
+
+LTCVERSION="litecoin-0.18.1-arm-linux-gnueabihf"
+export LTCVERSION
+#echo "LTC VERSION set: $LTCVERSION"
+
+DOGEVERSION="dogecoin-1.14.2-arm-linux-gnueabihf"
+export DOGEVERSION
+#echo -e "DOGE VERSION set: $DOGEVERSION$ ${NC}"
+

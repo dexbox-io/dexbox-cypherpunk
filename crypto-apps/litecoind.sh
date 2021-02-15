@@ -9,7 +9,7 @@ then
 	echo "litecoind already running."
 else
 	tmux a -t "DexBox Daemons"
-        tmux new-window -t "DexBox Daemons" -c /home/pi/litecoin/bin -n litecoind
+        tmux new-window -t "DexBox Daemons" -c $LTCDIR -n litecoind
         tmux select-window -t "litecoind"
         tmux send-keys './litecoind' C-m
 

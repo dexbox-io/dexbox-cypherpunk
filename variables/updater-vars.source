@@ -1,15 +1,9 @@
 #!/bin/bash
+source /$HOME/dexbox/dexbox-cypherpunk/variables/setvariables.source
 
-# TODO-LIST
-# - Create overclocking settings in /boot/config.txt
-# - Create correct /boot/cmdline.txt settings
-# - Update from DexBox`s Github Repository
-# - Check current versions
-# - Create Wallets
-# - 
-#
+# Setting variables of links to crypto binaries from official releases.
+echo -e "${DARKGRAY} importing Crypto URL variables..."
 
-# Links to crypto binaries from official releases.
 DCRCLIURL="https://github.com/decred/decred-binaries/releases/download/v1.6.0/decred-linux-arm64-v1.6.0.tar.gz"
 export DCRCLIURL
 echo "DCRCLI URL variable set: $DCRCLIURL"
@@ -46,4 +40,4 @@ DOGECOINURL="https://github.com/dogecoin/dogecoin/releases/download/v1.14.2/doge
 export DOGECOINURL
 echo "DogeCoin URL variable set: $DOGECOINURL"
 
-
+echo -e "Imported Crypto URL variables. DONE. ${NC}"

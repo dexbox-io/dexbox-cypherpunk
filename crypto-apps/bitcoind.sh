@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source  $HOME/dexbox/dexbox-cypherpunk/variables/setvariables.source
+
 # Runs bitcoind daemon.
 
 
@@ -9,7 +11,7 @@ then
 	echo "bitcoind already running."
 else
 	tmux a -t "DexBox Daemons"
-        tmux new-window -t "DexBox Daemons" -c /home/pi/bitcoin/bin -n bitcoind
+        tmux new-window -t "DexBox Daemons" -c $BTCDIR -n bitcoind
         tmux select-window -t "bitcoind"
         tmux send-keys './bitcoind' C-m
 
